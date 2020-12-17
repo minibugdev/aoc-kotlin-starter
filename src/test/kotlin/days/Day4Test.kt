@@ -6,16 +6,16 @@ import org.junit.Test
 
 class Day4Test {
 
-	private val dayFour = Day4()
+	private val aoc = Day4()
 
 	@Test
 	fun testPartOne() {
-		assertThat(dayFour.partOne(), `is`(208))
+		assertThat(aoc.partOne(), `is`(208))
 	}
 
 	@Test
 	fun testPartTwo() {
-		val partTwo = dayFour.partTwo()
+		val partTwo = aoc.partTwo()
 		assertThat(partTwo, `is`(167))
 	}
 }
