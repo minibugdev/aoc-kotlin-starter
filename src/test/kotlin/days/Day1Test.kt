@@ -18,8 +18,6 @@ class Day1Test {
 	@Test
 	fun testPartTwo() {
 		val partTwo = dayOne.partTwo()
-		assertThat(partTwo, notNullValue())
-		assertThat(partTwo, instanceOf(Int::class.java))
 		assertThat(partTwo, `is`(253928438))
 	}
 }
