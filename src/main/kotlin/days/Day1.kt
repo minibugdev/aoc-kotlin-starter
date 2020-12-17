@@ -2,9 +2,10 @@ package days
 
 class Day1 : Day(1) {
 
+	private val numbers = inputList.map { it.toInt() }
+
 	override fun partOne(): Any {
 		val map = mutableMapOf<Int, Int>()
-		val numbers = inputList.map { it.toInt() }
 		for (n in numbers) {
 			val complement = 2020 - n
 			if (map.containsKey(complement)) {
@@ -18,7 +19,6 @@ class Day1 : Day(1) {
 	}
 
 	override fun partTwo(): Any {
-		val numbers = inputList.map { it.toInt() }
 		val size = numbers.size
 
 		for (i in 0 until size - 2) {
