@@ -8,18 +8,18 @@ import org.junit.Test
 
 class Day1Test {
 
-    private val dayOne = Day1()
+	private val dayOne = Day1()
 
-    @Test
-    fun testPartOne() {
-        assertThat(dayOne.partOne(), `is`("THIS IS"))
-    }
+	@Test
+	fun testPartOne() {
+		assertThat(dayOne.partOne(), `is`(1010884))
+	}
 
-    @Test
-    fun testPartTwo() {
-        val partTwo = dayOne.partTwo()
-        assertThat(partTwo, notNullValue())
-        assertThat(partTwo, instanceOf(String::class.java))
-        assertThat(partTwo, `is`("FILE"))
-    }
+	@Test
+	fun testPartTwo() {
+		val partTwo = dayOne.partTwo()
+		assertThat(partTwo, notNullValue())
+		assertThat(partTwo, instanceOf(Int::class.java))
+		assertThat(partTwo, `is`(253928438))
+	}
 }
